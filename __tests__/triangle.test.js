@@ -40,4 +40,8 @@ describe('Triangle', () => {
     expect(array.checkType()).toEqual('error');
   });
 
+  test('should not accept strings as arguments, even if they contain numbers', () => {
+    let stringArg = new Triangle("1","2","1.5");
+    expect(stringArg.checkType()).toEqual('error');
+  });
 });
