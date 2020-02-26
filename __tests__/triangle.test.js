@@ -30,8 +30,6 @@ describe('Triangle', () => {
     expect(equilateralTriangle.checkType()).toEqual('equilateral triangle');
   });
 
-<<<<<<< Updated upstream
-=======
   test('should not accept words as arguments', () => {
     let words = new Triangle("la", "de", "da");
     expect(words.checkType()).toEqual('error');
@@ -41,5 +39,4 @@ describe('Triangle', () => {
     let array = new Triangle([7],[4],[5]);
     expect(array.checkType()).toEqual('error');
   });
->>>>>>> Stashed changes
 });
