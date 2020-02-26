@@ -30,4 +30,9 @@ describe('Triangle', () => {
     expect(equilateralTriangle.checkType()).toEqual('equilateral triangle');
   });
 
+  test('pass words to the triangle constructor', () => {
+    let words = new Triangle("la", "de", "da");
+    expect(words.checkType()).toEqual('error');
+  });
+
 });
