@@ -44,4 +44,9 @@ describe('Triangle', () => {
     let stringArg = new Triangle("1","2","1.5");
     expect(stringArg.checkType()).toEqual('error');
   });
+
+  test('should not accept negative numbers as arguments', () => {
+    let negativeArg = new Triangle(-5,-5,-5);
+    expect(negativeArg.checkType()).toEqual('error');
+  });
 });
